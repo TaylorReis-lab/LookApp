@@ -1,7 +1,7 @@
-import React from 'react';
-import { StatusBar } from 'react-native';
+import React from 'react'
+import { StatusBar } from 'react-native'
 
-import { Box, Title, Text, Spacer, Button, Input } from '../../components';
+import { Box, Title, Text, Spacer, Button, Input } from '../../components'
 
 const SingIn = () => {
   return (
@@ -30,7 +30,7 @@ const SingIn = () => {
         <Spacer size="70px" />
       </Box>
     </>
-  );
-};
+  )
+}
 
-export default SingIn;
+export default SingIn

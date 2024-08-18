@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import { Box, Title, Button, Text, Spacer } from '../../components';
+import { Box, Title, Button, Text, Spacer } from '../../components'
 
 const Home = () => {
   return (
@@ -21,11 +21,11 @@ const Home = () => {
         <Spacer size="29px" />
         <Text underline color="light" onPress={() => alert('test create')}>
           Create new account
-              </Text>
-              <Spacer size="70px" />
+        </Text>
+        <Spacer size="70px" />
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
