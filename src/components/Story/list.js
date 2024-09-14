@@ -4,12 +4,12 @@ import Story from '.'
 
 const StoryList = () => {
   return (
-    <Box fluid>
+    <Box fluid height="260px">
       <Box row fluid justify="space-between" hasPadding height="60px">
         <Text bold color="dark">
           Stories
         </Text>
-        <Text color="danger">Show ALL</Text>
+        <Text color="danger">Show All</Text>
       </Box>
       <ScrollView
         horizontal
