@@ -1,17 +1,14 @@
 import React from 'react'
-import { Box, Text, ScrollView } from '../../components'
+import { Box } from '../../components'
+import Post from '.'
 
 const PostList = () => {
   return (
-    <ScrollView
-      style={{
-        paddingLeft: 20
-      }}
-    >
+    <Box>
       {Array.from(Array(20))?.map(item => (
-        <Text>PostList</Text>
+        <Post />
       ))}
-    </ScrollView>
+    </Box>
   )
 }
 
