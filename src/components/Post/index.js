@@ -32,22 +32,31 @@ const Post = () => {
         radius="10px"
       />
       <Box row fluid align="center">
-        {Array.from(Array(3))?.map(item => (
-          <Cover
-            circle
-            width="30px"
-            height="30px"
-            border={`1px solid ${colors.light}`}
-            spacing="0px -15px 0px 0px"
-            image="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?cs=srgb&dl=pexels-kebs-visuals-742415-3992656.jpg&fm=jpg"
-          />
-        ))}
-        <Text variant="small" spacing="0px 20px">
-          Liked by 10,098
-        </Text>
-        <Box row>
-          <Icon name="life" />
-          <Icon name="life" />
+        <Box row fluid align="center">
+          {Array.from(Array(3))?.map(item => (
+            <Cover
+              circle
+              width="30px"
+              height="30px"
+              border={`1px solid ${colors.light}`}
+              spacing="0px -15px 0px 0px"
+              image="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?cs=srgb&dl=pexels-kebs-visuals-742415-3992656.jpg&fm=jpg"
+            />
+          ))}
+          <Text variant="small" spacing="0px 20px">
+            Liked by 10,098
+          </Text>
+        </Box>
+        <Box row justify="flex-end" >
+          <Touchable width="24px" spacing="0px 15px 0px 0px">
+            <Icon name="heart" size={24} color={colors.muted} />
+          </Touchable>
+          <Touchable width="24px" spacing="0px 15px 0px 0px">
+            <Icon name="bubble" size={24} color={colors.muted} />
+          </Touchable>
+          <Touchable width="24px">
+            <Icon name="share" size={24} color={colors.muted} />
+          </Touchable>
         </Box>
       </Box>
       <Spacer />
